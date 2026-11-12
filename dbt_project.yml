@@ -1,0 +1,15 @@
+name: melbourne_footfall
+version: "1.0.0"
+config-version: 2
+profile: melbourne_footfall
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+
+models:
+  melbourne_footfall:
+    staging:
+      +materialized: view      # light cleaning steps: no need to store them
+    marts:
+      +materialized: table     # final tables the dashboard and model read: store them

@@ -1,0 +1,19 @@
+.venv/
+warehouse/
+data/raw/
+target/
+logs/
+dbt_packages/
+__pycache__/
+.DS_Store
+hyperd.log
+tableau/Data/
+data/download.log
+.user.yml
+
+# local-only files
+tableau/
+LINKEDIN_POST.md
+SKILLS_GUIDE.md
+TABLEAU_GUIDE.md
+WALKTHROUGH.md

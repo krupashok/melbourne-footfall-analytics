@@ -1,0 +1,9 @@
+factor,pct_change,ci_low,ci_high,is_clear
+"Heavy rain (10 mm+), total",-25.0,,,1
+"Heavy rain (10 mm+), extra effect",-17.6,-24.4,-10.1,1
+Hot day (30C+),-9.7,-13.0,-6.3,1
+Rainy day (1 mm+),-9.0,-10.5,-7.4,1
+Public holiday,-5.4,-11.2,0.8,0
+Windy day (30 km/h+),-4.8,-10.0,0.7,0
+Cold day (12C or less),-3.4,-7.3,0.6,0
+New Year's Eve,19.1,16.0,22.2,1

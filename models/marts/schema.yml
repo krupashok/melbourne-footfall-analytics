@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_day
+        tests: [unique, not_null]
+  - name: dim_sensor
+    columns:
+      - name: sensor_id
+        tests: [unique, not_null]
+  - name: fct_footfall_hourly
+    columns:
+      - name: sensor_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_sensor')
+              field: sensor_id
+      - name: pedestrian_count
+        tests: [not_null]
+  - name: fct_city_daily
+    columns:
+      - name: sensing_date
+        tests: [unique, not_null]
+      - name: total_pedestrians
+        tests: [not_null]
+  - name: rpt_weekday_hour
+    columns:
+      - name: avg_pedestrians_per_sensor
+        tests: [not_null]

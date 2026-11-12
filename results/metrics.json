@@ -1,0 +1,57 @@
+{
+  "train_days": 609,
+  "test_days": 120,
+  "test_period": [
+    "2026-07-08",
+    "2026-11-04"
+  ],
+  "model_mape_pct": 6.6,
+  "baseline_mape_pct": 9.1,
+  "model_mae": 45728,
+  "baseline_mae": 62381,
+  "ols_r2": 0.66,
+  "effects_pct": {
+    "is_rainy": {
+      "pct_change": -9.0,
+      "ci_low": -10.5,
+      "ci_high": -7.4,
+      "p_value": 0.0
+    },
+    "heavy_rain": {
+      "pct_change": -17.6,
+      "ci_low": -24.4,
+      "ci_high": -10.1,
+      "p_value": 0.0
+    },
+    "hot_day": {
+      "pct_change": -9.7,
+      "ci_low": -13.0,
+      "ci_high": -6.3,
+      "p_value": 0.0
+    },
+    "cold_day": {
+      "pct_change": -3.4,
+      "ci_low": -7.3,
+      "ci_high": 0.6,
+      "p_value": 0.0941
+    },
+    "windy_day": {
+      "pct_change": -4.8,
+      "ci_low": -10.0,
+      "ci_high": 0.7,
+      "p_value": 0.0874
+    },
+    "holiday": {
+      "pct_change": -5.4,
+      "ci_low": -11.2,
+      "ci_high": 0.8,
+      "p_value": 0.0847
+    },
+    "nye": {
+      "pct_change": 19.1,
+      "ci_low": 16.0,
+      "ci_high": 22.2,
+      "p_value": 0.0
+    }
+  }
+}
